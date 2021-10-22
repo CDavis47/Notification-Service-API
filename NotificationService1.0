@@ -108,42 +108,42 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/responses/400Error/'
-    /customer:
-        post:
-        summary: 'Send a user a customer support ticket update'
-        operationId: sendMessage
-        tags:
-            - user
-        parameters:
-            - name: id
-            in: query
-            description: ID of the user
-            required: true
-            schema:
-                type: integer
-                format: int32
-            - name: ticketnumber
-            in: query
-            description: customer support ticket number
-            required: true
-            schema:
-                type: integer
-                format: int32
-            - name: message
-            in: query
-            description: notification message to be sent
-            required: true
-            schema:
-                type: string
-        responses:
-            '200':
-            description: Message Sent
-            '400':
-            description: failed to send message
-            content:
-                application/json:
-                schema:
-                    $ref: '#/components/responses/400Error'
+  /customer:
+    post:
+      summary: 'Send a user a customer support ticket update'
+      operationId: sendMessage
+      tags:
+        - user
+      parameters:
+        - name: id
+          in: query
+          description: ID of the user
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: ticketnumber
+          in: query
+          description: customer support ticket number
+          required: true
+          schema:
+            type: integer
+            format: int32
+        - name: message
+          in: query
+          description: notification message to be sent
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Message Sent
+        '400':
+          description: failed to send message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/400Error'
 components:
   schemas:
     User:
