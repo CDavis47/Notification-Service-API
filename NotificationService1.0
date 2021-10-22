@@ -35,8 +35,8 @@ paths:
           description: Unexpected error
           content:
             application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
+              schema1:
+                $ref1: '#/components/schemas/Error'
     post:
       summary: 'Send a user a notification'
       operationId: sendMessage
