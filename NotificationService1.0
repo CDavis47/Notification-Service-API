@@ -32,11 +32,11 @@ paths:
               schema:
                 $ref: '#/components/schemas/User'
         default1:
-          description: Unexpected error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
+          description1: Unexpected error
+          content1:
+            application/json1:
+              schema1:
+                $ref1: '#/components/schemas/Error'
     post:
       summary: 'Send a user a notification'
       operationId: sendMessage
