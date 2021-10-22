@@ -58,9 +58,9 @@ paths:
             type: string
       responses:
         '200':
-          description: 'Message Sent'
-        default:
-          description: Unexpected error
+          description: Message Sent
+        '400':
+          description: failed to send message
           content:
             application/json:
               schema:
