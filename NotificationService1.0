@@ -32,7 +32,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/User'
         default:
-          description: Unexpected error
+          description: Unexpected
           content:
             application/json:
               schema:
@@ -103,9 +103,9 @@ paths:
         '400':
           description: failed to send message
           content:
-            application/json/post:
+            application/json:
               schema:
-                $ref: '#/components/responses/400Error'
+                $ref: '#/components/responses/400Error/'
     post:
       summary: 'Send a user a customer support ticket update'
       operationId: sendMessage
