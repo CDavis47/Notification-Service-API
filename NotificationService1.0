@@ -6,7 +6,7 @@ servers:
   - url: https://CUSports/v1
 paths:
   /user:
-    get1:
+    get:
       summary: 'Returns details about a particular user'
       operationId: listUser
       tags:
