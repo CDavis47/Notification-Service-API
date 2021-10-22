@@ -39,7 +39,7 @@ paths:
                 $ref: '#/components/schemas/Error'
     post:
       summary: 'Send a user a notification'
-      operationId: listUser
+      operationId: sendMessage
       tags:
         - user
       parameters:
