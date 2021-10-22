@@ -65,8 +65,8 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/responses/400Error'
-
-  /user#customersupport:
+                
+  /user/customersupport:
     post:
       summary: 'Send a user an order update'
       operationId: sendMessage
