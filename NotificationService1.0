@@ -36,7 +36,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref1: '#/components/schemas/Error'
+                $ref: '#/components/schemas/Error'
     post:
       summary: 'Send a user a notification'
       operationId: sendMessage
