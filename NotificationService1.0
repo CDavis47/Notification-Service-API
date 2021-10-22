@@ -19,6 +19,24 @@ paths:
           schema:
             type: integer
             format: int32
+      responses:
+        '200':
+          description: 'Details about a user by ID'
+          headers:
+            x-next:
+              description: A link to the next page of responses
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        default1:
+          description1: Unexpected error
+          content1:
+            application/json1:
+              schema1:
+                $ref1: '#/components/schemas/Error'
     post:
       summary: 'Send a user a notification'
       operationId: sendMessage
@@ -38,6 +56,15 @@ paths:
           required: true
           schema:
             type: string
+      responses:
+        '200':
+          description: Message Sent
+        '400':
+          description: failed to send message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/400Error'
     post:
       summary: 'Send a user an order update'
       operationId: sendMessage
@@ -70,6 +97,15 @@ paths:
           required: true
           schema:
             type: string
+      responses:
+        '200':
+          description: Message Sent
+        '400':
+          description: failed to send message
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/400Error/'
     post:
       summary: 'Send a user a customer support ticket update'
       operationId: sendMessage
@@ -96,7 +132,7 @@ paths:
           required: true
           schema:
             type: string
-    responses:
+      responses:
         '200':
           description: Message Sent
         '400':
