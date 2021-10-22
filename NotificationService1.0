@@ -85,6 +85,12 @@ paths:
           schema:
             type: integer
             format: int32
+        - name: orderstatus
+          in: query
+          description: notification message to be sent
+          required: true
+          schema:
+            type: string
         - name: message
           in: query
           description: notification message to be sent
