@@ -104,8 +104,8 @@ paths:
           description: failed to send message
           content:
             application/json:
-            schema:
-              $ref: '#/components/responses/400Error'
+              schema:
+                $ref: '#/components/responses/400Error'
     post:
       summary: 'Send a user a customer support ticket update'
       operationId: sendMessage
