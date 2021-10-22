@@ -31,7 +31,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
-        default:
+        default1:
           description: Unexpected error
           content:
             application/json:
