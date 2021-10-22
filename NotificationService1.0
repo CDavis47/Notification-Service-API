@@ -85,5 +85,16 @@ components:
     BasicAuth:
       type: http
       scheme: basic
+    
+  responses:
+    400Error:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
 security:
   - BasicAuth: []
