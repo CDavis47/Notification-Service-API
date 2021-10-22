@@ -103,7 +103,7 @@ paths:
         '400':
           description: failed to send message
           content:
-            application/json:
+          application/json:
               schema:
                 $ref: '#/components/responses/400Error'
     post:
