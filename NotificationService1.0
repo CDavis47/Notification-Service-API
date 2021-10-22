@@ -105,7 +105,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/responses/400Error'
+                $ref: 'test'
     post:
       summary: 'Send a user a customer support ticket update'
       operationId: sendMessage
