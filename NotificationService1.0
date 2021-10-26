@@ -5,38 +5,7 @@ info:
 servers:
   - url: https://CUSports/v1
 paths:
-  /user:
-    get:
-      summary: 'Returns details about a particular user'
-      operationId: listUser
-      tags:
-        - user
-      parameters:
-        - name: id
-          in: query
-          description: ID of the user
-          required: true
-          schema:
-            type: integer
-            format: int32
-      responses:
-        '200':
-          description: 'Details about a user by ID'
-          headers:
-            x-next:
-              description: A link to the next page of responses
-              schema:
-                type: string
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/User'
-        default:
-          description: Unexpected error
-          content:
-            application/json:
-              schema1:
-                $ref1: '#/components/schemas/Error'
+  /user:  
     post:
       summary: 'Send a user a notification'
       operationId: sendMessage
