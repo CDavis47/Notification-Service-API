@@ -5,7 +5,7 @@ info:
 servers:
   - url: https://CUSports/v1
 paths:
-  /user:  
+  /user/:  
     post:
       summary: 'Send a user a notification'
       operationId: sendMessage
