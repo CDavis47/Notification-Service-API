@@ -77,6 +77,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/responses/400Error/'
+                
   /customer:
     post:
       summary: 'Send a user a customer support ticket update'
