@@ -64,7 +64,7 @@ paths:
             type: string
         - name: orderupdate
           in: query
-          description: updated order information
+          description: order update information
           required: true
           schema:
             type: string
@@ -76,7 +76,8 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/responses/400Error/' 
+                $ref: '#/components/responses/400Error/'
+                
   /customer:
     post:
       summary: 'Send a user a customer support ticket update'
