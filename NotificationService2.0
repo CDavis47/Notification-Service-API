@@ -114,7 +114,7 @@ paths:
         - name: ticketupdate
           in: query
           description: updated ticket information
-          required: false
+          required: true
           schema:
             type: string
         - name: ticketlink
