@@ -82,7 +82,7 @@ paths:
       summary: 'Send a user a customer support ticket update'
       operationId: sendMessage
       tags:
-        - customer
+        - customersupport
       parameters:
         - name: id
           in: query
