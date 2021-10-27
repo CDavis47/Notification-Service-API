@@ -120,6 +120,13 @@ paths:
         tags:
             - customer
         parameters:
+        - name: ordernumber
+          in: query
+          description: order number
+          required: true
+          schema:
+            type: integer
+            format: int32
             
 components:
   schemas:
