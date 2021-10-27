@@ -99,7 +99,7 @@ paths:
           schema:
             type: integer
             format: int32
-        - name: ticketupdate
+        - name: ticket update
           in: query
           description: updated ticket information
           required: false
