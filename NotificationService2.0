@@ -105,7 +105,6 @@ paths:
           required: false
           schema:
               type: string
-              format: string
       responses:
         '200':
           description: Message Sent
