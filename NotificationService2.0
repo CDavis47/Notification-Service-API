@@ -104,6 +104,12 @@ paths:
           required: true
           schema:
             type: string
+        - name: ticketlink
+          in: query
+          description: link to support ticket
+          required: true
+          schema:
+            type: string
       responses:
         '200':
           description: Message Sent
