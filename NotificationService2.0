@@ -77,6 +77,19 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/responses/400Error/' 
+    post:
+        summary: 'Send a customer an order receipt'
+        operationId: 'sendReceipt'
+        tags:
+            - customer
+        parameters:
+        - name: ordernumber
+          in: query
+          description: order number
+          required: true
+          schema:
+            type: integer
+            format: int32
   /customersupport:
     post:
       summary: 'Send a user a customer support ticket update'
@@ -119,19 +132,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/responses/400Error'
-    post:
-        summary: 'Send a customer an order receipt'
-        operationId: 'sendReceipt'
-        tags:
-            - customer
-        parameters:
-        - name: ordernumber
-          in: query
-          description: order number
-          required: true
-          schema:
-            type: integer
-            format: int32
+    
             
 components:
   schemas:
