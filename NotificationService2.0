@@ -65,7 +65,7 @@ paths:
         - name: orderupdate
           in: query
           description: updated order information
-          required: true
+          required: false
           schema:
             type: string
       responses:
