@@ -58,7 +58,7 @@ paths:
             format: int32
         - name: orderstatus
           in: query
-          description: notification message to be sent
+          description: status of the order
           required: false
           schema:
             type: string
