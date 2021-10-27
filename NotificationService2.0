@@ -99,12 +99,13 @@ paths:
           schema:
             type: integer
             format: int32
-        - name: message
+        - name: ticket update
           in: query
-          description: notification message to be sent
+          description: updated ticket information
           required: true
           schema:
-            type: string
+              type: string
+              format: string
       responses:
         '200':
           description: Message Sent
