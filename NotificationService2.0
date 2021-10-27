@@ -108,7 +108,7 @@ paths:
         - name: ticketlink
           in: query
           description: updated ticket information
-          required: true
+          required: false
           schema:
               type: string
       responses:
