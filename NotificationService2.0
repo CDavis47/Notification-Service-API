@@ -59,13 +59,13 @@ paths:
         - name: orderstatus
           in: query
           description: notification message to be sent
-          required: true
+          required: false
           schema:
             type: string
         - name: message
           in: query
           description: notification message to be sent
-          required: true
+          required: false
           schema:
             type: string
       responses:
