@@ -99,13 +99,13 @@ paths:
           schema:
             type: integer
             format: int32
-        - name: ticket update
+        - name: ticketlink
           in: query
           description: updated ticket information
-          required: false
+          required: true
           schema:
               type: string
-        - name: ticketlink
+        - name: ticketupdate
           in: query
           description: updated ticket information
           required: false
