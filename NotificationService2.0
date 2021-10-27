@@ -64,7 +64,7 @@ paths:
             type: string
         - name: orderupdate
           in: query
-          description: notification message to be sent
+          description: updated order information
           required: true
           schema:
             type: string
