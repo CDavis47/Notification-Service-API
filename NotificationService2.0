@@ -161,12 +161,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/responses/400Error'
-  /account
+  /account:
     post:
       summary: 'Send a user a customer support ticket update'
       operationId: sendMessage
       tags:
-        - customersupport
+        - account
       parameters:
         - name: id
           in: query
@@ -175,14 +175,14 @@ paths:
           schema:
             type: integer
             format: int32
-        - name: ticketnumber
+        - name: username
           in: query
           description: customer support ticket number
           required: true
           schema:
             type: integer
             format: int32
-        - name: ticketupdate
+        - name: password
           in: query
           description: updated ticket information
           required: true
