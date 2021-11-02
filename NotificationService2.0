@@ -161,9 +161,9 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/responses/400Error'
-  /account:
+  /accountsetup:
     post:
-      summary: 'Send a user a customer support ticket update'
+      summary: 'Send user information and '
       operationId: sendMessage
       tags:
         - account
