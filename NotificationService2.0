@@ -161,9 +161,9 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/responses/400Error'
-  /accountsetup:
+  /vendorsetup:
     post:
-      summary: 'Send user information and '
+      summary: 'Send account information and password reset link'
       operationId: sendMessage
       tags:
         - account
