@@ -175,5 +175,6 @@ components:
             properties:
               message:
                 type: string
+                description: "Message failed to send due to missing/invalid parameters."
 security:
   - BasicAuth: []
