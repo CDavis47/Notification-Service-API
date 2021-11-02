@@ -180,8 +180,7 @@ paths:
           description: account username
           required: true
           schema:
-            type: integer
-            format: int32
+            type: string
         - name: password
           in: query
           description: automatically generated password
@@ -190,7 +189,7 @@ paths:
             type: string
         - name: password reset link
           in: query
-          description: link to support ticket
+          description: password reset link
           required: true
           schema:
             type: string
