@@ -166,7 +166,7 @@ paths:
       summary: 'Send account information and password reset link'
       operationId: sendMessage
       tags:
-        - account
+        - vendorsetup
       parameters:
         - name: id
           in: query
