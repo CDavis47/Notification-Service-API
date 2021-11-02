@@ -108,7 +108,7 @@ paths:
           description: total charged to the customer
           required: true
           schema:
-            type: float
+            type: integer
         responses:
           '200':
             description: Message Sent
