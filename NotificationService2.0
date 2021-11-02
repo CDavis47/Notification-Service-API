@@ -97,6 +97,18 @@ paths:
           required: true
           schema:
             type: string
+        - name: shippingaddress
+          in: query
+          description: shipping address
+          required: true
+          schema:
+            type: string
+        - name: total
+          in: query
+          description: total charged to the customer
+          required: true
+          schema:
+            type: float
         responses:
           '200':
             description: Message Sent
