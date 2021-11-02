@@ -177,20 +177,20 @@ paths:
             format: int32
         - name: username
           in: query
-          description: customer support ticket number
+          description: account username
           required: true
           schema:
             type: integer
             format: int32
         - name: password
           in: query
-          description: updated ticket information
+          description: automatically generated password
           required: true
           schema:
             type: string
-        - name: ticketlink
+        - name: password reset link
           in: query
-          description: link to support ticket
+          description: password reset link
           required: true
           schema:
             type: string
