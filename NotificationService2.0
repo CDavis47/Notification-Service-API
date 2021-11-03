@@ -33,7 +33,11 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/responses/400Error'
+                type: object
+                properties:
+                    message:
+                        type: string
+                        description: Message failed to send due to missing/invalid parameters.
                 
   /customer:
     post:
