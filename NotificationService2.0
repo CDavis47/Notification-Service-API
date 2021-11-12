@@ -7,7 +7,7 @@ servers:
 paths:
   /user:  
     post:
-      summary: 'Send a user a notification'
+      summary: 'Send a user an SMS notification'
       operationId: sendMessage
       tags:
         - user
@@ -25,6 +25,13 @@ paths:
           required: true
           schema:
             type: string
+        - name: TWILIO_ACCOUNT_SID
+            in: query
+            description: TWILIO ACCOUNT ID
+            required: true
+        - name: TWILIO_AUTH_TOKEN=<your-auth-token>
+        - name: TWILIO_PHONE_NUMBER=<your-twilio-phone-number>
+        - name: MY_PHONE_NUMBER=<your-personal-phone-number>
       responses:
         '200':
           description: Message Sent
