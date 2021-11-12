@@ -126,13 +126,6 @@ paths:
       tags:
         - customersupport
       parameters:
-        - name: id
-          in: query
-          description: ID of the user
-          required: true
-          schema:
-            type: integer
-            format: int32
         - name: ticketnumber
           in: query
           description: customer support ticket number
@@ -140,15 +133,15 @@ paths:
           schema:
             type: integer
             format: int32
-        - name: ticketupdate
+        - name: customername
           in: query
-          description: updated ticket information
+          description: name of customer
           required: true
           schema:
             type: string
-        - name: ticketlink
+        - name: updatestring
           in: query
-          description: link to support ticket
+          description: message containing the update info
           required: true
           schema:
             type: string
