@@ -26,22 +26,21 @@ paths:
           schema:
             type: string
         - name: TWILIO_ACCOUNT_SID
-            in: query
-            description: TWILIO ACCOUNT ID
-            required: true
-            
+          in: query
+          description: TWILIO ACCOUNT ID
+          required: true
         - name: TWILIO_AUTH_TOKEN
-            in: query
-            description: TWILIO AUTH TOKEN
-            required: true
+          in: query
+          description: TWILIO AUTH TOKEN
+          required: true
         - name: TWILIO_PHONE_NUMBER
-            in: query
-            description: TWILIO PHONE NUMBER
-            required: true
+          in: query
+          description: TWILIO PHONE NUMBER
+          required: true
         - name: MY_PHONE_NUMBER
-            in: query
-            description: PHONE NUMBER
-            required: true
+          in: query
+          description: PHONE NUMBER
+          required: true
       responses:
         '200':
           description: Message Sent
