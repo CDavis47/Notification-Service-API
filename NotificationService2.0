@@ -29,9 +29,9 @@ paths:
             in: query
             description: TWILIO ACCOUNT ID
             required: true
-        - name: TWILIO_AUTH_TOKEN=<your-auth-token>
+        - name: TWILIO_AUTH_TOKEN
             in: query
-            description: TWILIO ACCOUNT ID
+            description: TWILIO AUTH TOKEN
             required: true
         - name: TWILIO_PHONE_NUMBER=<your-twilio-phone-number>
             in: query
