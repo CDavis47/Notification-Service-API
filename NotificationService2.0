@@ -33,13 +33,13 @@ paths:
             in: query
             description: TWILIO AUTH TOKEN
             required: true
-        - name: TWILIO_PHONE_NUMBER=<your-twilio-phone-number>
+        - name: TWILIO_PHONE_NUMBER
             in: query
-            description: TWILIO ACCOUNT ID
+            description: TWILIO PHONE NUMBER
             required: true
-        - name: MY_PHONE_NUMBER=<your-personal-phone-number>
+        - name: MY_PHONE_NUMBER
             in: query
-            description: TWILIO ACCOUNT ID
+            description: PHONE NUMBER
             required: true
       responses:
         '200':
