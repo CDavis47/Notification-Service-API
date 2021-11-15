@@ -47,6 +47,8 @@ paths:
           in: query
           description: PHONE NUMBER
           required: true
+          schema:
+            type: integer
       responses:
         '200':
           description: Message Sent
@@ -56,6 +58,11 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/responses/400Error'
+    curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
+    --data-urlencode "Body=Hi there" \
+    --data-urlencode "From=+15017122661" \
+    --data-urlencode "To=+15558675310" \
+    -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
                 
   /customer:
     post:
