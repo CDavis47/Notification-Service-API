@@ -11,44 +11,7 @@ paths:
       operationId: sendMessage
       tags:
         - user
-      parameters:
-        - name: id
-          in: query
-          description: ID of the user
-          required: true
-          schema:
-            type: integer
-            format: int32
-        - name: message
-          in: query
-          description: notification message to be sent
-          required: true
-          schema:
-            type: string
-        - name: TWILIO_ACCOUNT_SID
-          in: query
-          description: TWILIO ACCOUNT ID
-          required: true
-          schema:
-            type: string
-        - name: TWILIO_AUTH_TOKEN
-          in: query
-          description: TWILIO AUTH TOKEN
-          required: true
-          schema:
-            type: string
-        - name: TWILIO_PHONE_NUMBER
-          in: query
-          description: TWILIO PHONE NUMBER
-          required: true
-          schema:
-            type: integer
-        - name: MY_PHONE_NUMBER
-          in: query
-          description: PHONE NUMBER
-          required: true
-          schema:
-            type: integer
+        
       responses:
         '200':
           description: Message Sent
